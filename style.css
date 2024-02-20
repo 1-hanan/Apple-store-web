@@ -1,0 +1,413 @@
+body{
+  background-color: #F1F6F9;
+  margin-top:15px;
+  margin-left: 0px;
+  overflow-x: hidden;
+
+}
+.head{
+    background-color: #212A3E;
+    text-align: center;
+    padding: 5px;
+    margin:-20px; 
+    border-radius: 17px;
+}
+.head a{
+  color: white;
+  text-decoration: none;
+  
+}
+.head a:hover{
+ color: #6e6e73;
+}
+.logIcon{
+    top:13px;
+    left: 15px;
+    position: absolute;
+}
+.icon1{
+    top:11px;
+    left: 390px;
+    position: absolute;
+}
+.icon2{
+    top:12px;
+    right: 20px;
+    position: absolute;
+}
+li{
+    color: #F1F6F9;
+    display:inline;
+    padding-right: 20px;
+    
+}
+.slider{
+    Width:5000px;
+    margin:auto;
+    overflow:hidden;
+  }
+    
+    .slider ul{
+    padding:0;
+    width:2000px;
+    list-style:none;
+    position:relative;
+    animation:sliding 10s ease-in-out infinite;
+    
+    }
+    
+    .slider ul li{
+        float:left;
+        position:relative;
+    }
+    
+    .slider img {
+        width:300px;
+        height:220px;
+        border-radius: 20px;
+    }
+
+    
+    
+    .slider ul:hover{
+        animation-play-state:paused;
+    }
+    @keyframes sliding{
+        
+        5% {
+            left: 0;
+        }
+        15% {
+            left: -400px;
+            
+        }
+        50% {
+            left: 0px;
+        }
+        
+    }
+    .body1{
+        width: 50%;
+        margin-left: 180px;
+    }
+    .communicate img{
+        border-radius: 20px;
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        right: 340px;
+        top: 133px;
+    }
+    .communicate b{
+        position: absolute;
+        right: 190px;
+        top: 135px;
+    }
+    .communicate a{
+      color:#212A3E;
+        position: absolute;
+        right: 230px;
+        top: 155px;
+    }
+    
+    .body-body {
+        color: #6e6e73;
+    }
+    .body-header, .body-body {
+        font-size: 40px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -.003em;
+        font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        display: inline;
+    }
+
+
+    /* .container {
+        min-height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+      
+      .card {
+        width: 320px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+      }
+      .f{
+        background-color: rgba(17, 17, 29, 0.972);
+      }
+      .s{
+        background-color: rgba(233, 232, 232, 0.885);
+        color: black;
+      }
+      .th{
+        background-color: black;
+      }
+      .fo{
+        background-color: rgba(255, 255, 255, 0.885);
+        color: black;
+      }
+      .fi{
+        background-color: rgb(45, 45, 45);
+      }
+      .card .imgContainer {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 85%;
+        transition: 1s;
+        transform: translateY(-50%);
+      }
+      
+      .card:hover .imgContainer {
+        top: 0%;
+        transform: translateY(10%);
+      }
+      
+      .imgContainer img {
+        width: 330px;
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%) ;
+      }
+      
+      .card .content {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        transition: 1s;
+      }
+      
+      .card:hover .content {
+        height: 210px;
+      }
+      
+      
+      .content .des{
+        opacity: 0;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        visibility: hidden;
+        padding: 8px 20px;
+      }
+      
+      
+      .card:hover .des {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+      }
+      /* ///////////////////////////////////// */
+      /* h2{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 4px;
+      }
+       */
+      .all-products{
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .product{
+        overflow: hidden;
+        background:#ffffff ;
+        color: #21201e;
+        text-align: center;
+        width: 240px;
+        height: 450px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.2rem;
+        margin: 2rem;
+      }
+      
+      
+      .product .product-title, .product .product-price{
+        font-size: 18px;
+      }
+      
+      .product:hover img{
+        scale:  1.1;
+      }
+      
+      .product:hover {
+        box-shadow: 5px 15px 25px #eeeeee;
+      }
+      
+      .product img {
+        height: 200px;
+        margin: 1rem;
+        transition: all 0.3s;
+      }
+      
+      .product a:link, .product a:visited{
+        color: #ececec;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #2c3e50;
+        padding: 1.2rem 3rem;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+      
+      .product a:hover{
+        transform: scale(1.1);
+      }
+
+      /* //////////////////////// */
+      .tail{
+        margin-right: 0px;
+        margin-bottom: 0px;
+        height: 250px;
+        color: black;
+
+      }
+      .le{
+        position: absolute;
+        left: 250px;
+      }
+      .cen{
+        position: absolute;
+        left: 450px;
+      }
+      .cen2{
+        position: absolute;
+        left: 650px;
+      }
+      .ri2{
+        position: absolute;
+        left:850px
+      }
+      .tail h3{
+        font-weight:650;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .tail p{
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      /* /////////////////////////////// */
+      .container {
+        background-color: #F1F6F9;
+     
+        top: 70px;
+        position: absolute;
+        left: 28%;
+        
+    }
+    
+    .box {
+        background-color: white;
+        border-radius: 10px;
+        padding: 45px;
+        width: 450px;
+        max-width: 95%;
+        box-shadow: -4px 4px 5px 0px #c1c0c0;
+        
+    }
+    
+    
+    
+    .box h1 {
+        font-size: 35px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+        .box p {
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+    
+    .box form label {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    
+        .box form div {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #b0b0b0;
+        }
+    
+            .box form div:hover {
+                border-bottom-color: #212A3E;
+            }
+    
+        .box form div:first-of-type {
+            margin-bottom: 55px;
+        }
+    
+      
+    
+        .box form div input {
+            font-size: 12px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            min-width: 0;
+            flex: 1;
+        }
+    
+            .box form div input::placeholder {
+                opacity: 1;
+                color: #b0b0b0;
+                font-size: 12px;
+            }
+    
+    
+    
+        .box form button {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #212A3E;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            margin-top: 45px;
+            border-radius: 250px;
+        }
+    
+            .box form button:hover {
+                background-color: #31394b;
+                cursor: pointer;
+            }
+            .box a{
+              color:#212A3E;
+            }
+
+
+      /* //////////////////////////////// */
+
+      
+
+      
+      
+
+      
+    
